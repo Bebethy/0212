@@ -1,0 +1,257 @@
+/* Reset básico para garantir que o layout seja consistente */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo do documento */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 0 20px;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #003366; /* Azul escuro */
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.8em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+header .tagline {
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+/* Seção Sobre Mim */
+#sobre {
+    background-color: #e6f0ff; /* Azul muito suave */
+    padding: 60px 0;
+}
+
+.sobre-conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.sobre-texto {
+    max-width: 600px;
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #333;
+}
+
+.sobre-texto h2 {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.sobre-texto p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+.sobre-imagem {
+    text-align: center;
+    position: relative;
+}
+
+#imagem-autor {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #003366;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease, box-shadow 0.3s ease;
+}
+
+#imagem-autor:hover {
+    transform: scale(1.1); /* Efeito de zoom */
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2); /* Sombra mais pronunciada */
+}
+
+/* Seção de Portfólio */
+#portfolio {
+    background-color: #f2f2f2; /* Cinza claro */
+    padding: 60px 0;
+}
+
+#portfolio h2 {
+    color: #003366; /* Azul escuro */
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.trabalhos {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.trabalho {
+    background-color: #fff;
+    padding: 20px;
+    width: 48%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease;
+}
+
+.trabalho:hover {
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15);
+}
+
+.trabalho img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.trabalho p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+/* Seção de Serviços */
+#servicos {
+    padding: 60px 0;
+    background-color: #e6f0ff; /* Azul suave */
+}
+
+#servicos h2 {
+    color: #003366; /* Azul escuro */
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+#servicos ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+#servicos li {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+#servicos h3 {
+    color: #003366;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+#servicos p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+/* Rodapé */
+footer {
+    background-color: #003366; /* Azul escuro */
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Links de navegação */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    background-color: #004c8c;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 1.1em;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #006bb3;
+    transform: translateY(-3px);
+}
+
+nav ul li a:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 107, 179, 0.5);
+}
+/* Seção Quem Sou Eu */
+#detalhes {
+    background-color: #ffffff; /* Branco */
+    padding: 60px 20px; /* Mais espaçamento */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-bottom: 60px; /* Espaço abaixo */
+    text-align: center; /* Centraliza o conteúdo */
+    max-width: 900px; /* Limita a largura máxima da seção */
+    margin-left: auto; /* Centraliza a seção horizontalmente */
+    margin-right: auto; /* Centraliza a seção horizontalmente */
+}
+
+.detalhes-content {
+    padding: 20px;
+}
+
+#detalhes h2 {
+    font-size: 2.8em; /* Aumentando o título para mais destaque */
+    color: #003366; /* Azul escuro */
+    margin-bottom: 25px; /* Mais espaço abaixo do título */
+    font-weight: bold;
+    text-transform: uppercase; /* Transformando o título em maiúsculas para mais destaque */
+    letter-spacing: 2px; /* Aumenta o espaçamento entre as letras */
+}
+
+#detalhes p {
+    font-size: 1.2em; /* Tamanho de texto maior */
+    color: #444; /* Cor de texto mais escura */
+    line-height: 1.8; /* Melhor espaçamento entre as linhas */
+    max-width: 800px; /* Limita a largura do texto */
+    margin: 0 auto; /* Centraliza o texto */
+    padding-top: 20px;
+    text-align: justify; /* Justifica o texto */
+    color: #555; /* Cor de texto mais suave */
+}
